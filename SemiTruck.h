@@ -1,7 +1,8 @@
 #pragma once
 #include "Vehicle.h"
+#include <string>
 
-struct SemiTruck : public Vehicle
+struct SemiTruck : Vehicle
 {
     SemiTruck(const std::string& s);
 

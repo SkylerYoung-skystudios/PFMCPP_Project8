@@ -2,7 +2,6 @@
 #include "Car.h"
 #include "Motorcycle.h"
 #include "SemiTruck.h"
-#include "HighwayPatrol.h"
 
 #include <cassert>
 
@@ -65,6 +64,7 @@ void Highway::addVehicle(Vehicle* v)
     vehicles.push_back(v);
     addVehicleInternal(v);
 }
+
 void Highway::removeVehicle(Vehicle* v)
 {
     vehicles.erase(std::remove(vehicles.begin(), 

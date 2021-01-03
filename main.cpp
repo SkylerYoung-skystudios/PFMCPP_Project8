@@ -45,7 +45,6 @@ your task:
 #include <algorithm>
 #include <cassert>
 #include "Car.h"
-#include "Vehicle.h"
 #include "Motorcycle.h"
 #include "Highway.h"
 #include "HighwayPatrol.h"
