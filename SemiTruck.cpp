@@ -4,6 +4,10 @@
 
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
 
+SemiTruck::~SemiTruck()= default;
+SemiTruck::SemiTruck(const SemiTruck&)= default;
+
+
 void SemiTruck::slowDown()
 {
     setSpeed(35);
