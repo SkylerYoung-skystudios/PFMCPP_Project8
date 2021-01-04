@@ -8,9 +8,8 @@ struct SemiTruck : Vehicle
 
     ~SemiTruck() override;
     SemiTruck(const SemiTruck&);
-    SemiTruck& operator=(const SemiTruck&)= default;
+    SemiTruck& operator = (const SemiTruck&);
 
     void slowDown();
     void pullOver();
-
 };

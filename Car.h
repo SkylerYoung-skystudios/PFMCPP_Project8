@@ -7,7 +7,7 @@ struct Car : public Vehicle
 
     ~Car() override;
     Car(const Car&);
-    Car& operator=(const Car&)= default;
+    Car& operator = (const Car&);
 
     void closeWindows();
 

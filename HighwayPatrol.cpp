@@ -5,13 +5,11 @@
 #include "SemiTruck.h"
 #include "Car.h"
 
-HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
-{
-
-}
+HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol"){}
 
 HighwayPatrol::~HighwayPatrol() = default;
-HighwayPatrol::HighwayPatrol(const HighwayPatrol&)= default;
+HighwayPatrol::HighwayPatrol(const HighwayPatrol&) = default;
+HighwayPatrol& HighwayPatrol::operator = (const HighwayPatrol&) = default;
 
 void HighwayPatrol::scanHighway(Highway* h)
 {
@@ -37,7 +35,7 @@ void HighwayPatrol::pullOver( Vehicle* v, bool willArrest, Highway* h )
         //print the vehicle type in this std::cout between "THE [" and "] PULL". 
         std::string vType;
 
-        if (dynamic_cast<Motorcycle*>(v))
+    if (dynamic_cast<Motorcycle*>(v))
     {
         vType = "MOTORCYCLE";
     }

@@ -1,16 +1,15 @@
 #pragma once
-
 #include <iostream>
 #include <limits>
 #include "Vehicle.h"
 
-struct Motorcycle : public Vehicle
+struct Motorcycle : Vehicle
 {
     Motorcycle(const std::string& n);
 
-    ~Motorcycle() override= default;
-    Motorcycle(const Motorcycle&)= default;
-    Motorcycle& operator=(const Motorcycle&)= default;
+    ~Motorcycle() override;
+    Motorcycle(const Motorcycle&);
+    Motorcycle& operator = (const Motorcycle&);
     
     void lanesplitAndRace( int topSpeed = std::numeric_limits<int>::max() );
     

@@ -1,9 +1,8 @@
 #pragma once
-#include "Vehicle.h"
 #include <vector>
 #include <algorithm>
 
-
+struct Vehicle;
 struct HighwayPatrol;
 
 struct Highway

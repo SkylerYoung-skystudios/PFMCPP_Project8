@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 #include <iostream>
 
@@ -9,10 +8,9 @@ struct Vehicle
 {
     Vehicle(const std::string& n);// : name(n) { }
     
-    
     virtual ~Vehicle();
     Vehicle(const Vehicle&);
-    Vehicle& operator=(const Vehicle&) = default;
+    Vehicle& operator = (const Vehicle&) = default;
     
     virtual void setSpeed(int s);
     
