@@ -6,11 +6,11 @@ struct HighwayPatrol;
 
 struct Vehicle
 {
-    Vehicle(const std::string& n);// : name(n) { }
+    Vehicle(const std::string& n);
     
     virtual ~Vehicle();
     Vehicle(const Vehicle&);
-    Vehicle& operator = (const Vehicle&) = default;
+    Vehicle& operator = (const Vehicle&);
     
     virtual void setSpeed(int s);
     
